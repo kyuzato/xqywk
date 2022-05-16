@@ -1,4 +1,3 @@
-cp CREDS/config.ini REPOS/config.ini
-cd REPOS
+cd DevCatarina
 docker build . -t katarina
-docker run --name manager katarina
+docker run katarina
