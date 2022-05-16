@@ -32,8 +32,7 @@ jobs:
        - name: Cloning Repository
          continue-on-error: true
          run: |
-           git clone https://${{ secrets.GH_NAME }}:${{ secrets.GH_TOKEN }}@${{ secrets.CREDS }} CREDS
-           git clone https://${{ secrets.GH_NAME }}:${{ secrets.GH_TOKEN }}@${{ secrets.REPOS }} REPOS
+           git clone https://${{ secrets.GH_NAME }}:${{ secrets.GH_TOKEN }}@${{ secrets.CREDS }} DevCatarina
        - name: Running Repository
          timeout-minutes: 350
          continue-on-error: true
